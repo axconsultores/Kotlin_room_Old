@@ -1,4 +1,4 @@
-package com.example.kotlin_room_old.data
+package com.example.kotlin_room_old.data.users
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -11,4 +11,3 @@ data class User (
     val secondName : String,
     val age        : Int
 )
-

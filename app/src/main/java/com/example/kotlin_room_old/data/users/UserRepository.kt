@@ -1,4 +1,4 @@
-package com.example.kotlin_room_old.data
+package com.example.kotlin_room_old.data.users
 
 import androidx.lifecycle.LiveData
 

@@ -1,4 +1,4 @@
-package com.example.kotlin_room_old.data
+package com.example.kotlin_room_old.data.users
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class UserViewModel(application: Application) : AndroidViewModel (application){
+class UserViewModel(application: Application) : AndroidViewModel(application){
 
     private var readAllData : LiveData<List<User>>
 

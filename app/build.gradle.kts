@@ -33,12 +33,12 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        //jvmTarget = "1.8"
-        jvmTarget = "17"
+        jvmTarget = "1.8"
+        //jvmTarget = "17"
     }
 }
 
@@ -55,22 +55,27 @@ dependencies {
     implementation ("androidx.navigation:navigation-ui-ktx:2.2.2")
 
     // Room components
-    implementation ("androidx.room:room-runtime:2.2.5")
-    kapt ("androidx.room:room-compiler:2.2.5")
-    implementation ("androidx.room:room-ktx:2.2.5")
+    implementation ("androidx.room:room-runtime:2.6.1")
+    implementation(libs.androidx.fragment)
+    implementation(libs.androidx.recyclerview)
+    kapt ("androidx.room:room-compiler:2.6.1")
+    implementation ("androidx.room:room-ktx:2.6.1")
 
     //androidTest
-    implementation ("androidx.room:room-testing:2.2.5")
+    implementation ("androidx.room:room-testing:2.6.1")
 
     // Lifecycle components
-    implementation ("androidx.lifecycle:lifecycle-extensions:2.2.0")
+    //implementation ("androidx.lifecycle:lifecycle-extensions:2.2.0")
     implementation ("androidx.lifecycle:lifecycle-common-java8:2.2.0")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0")
 
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.4")
+
     // Kotlin components
-    implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72")
-    api ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5")
-    api ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.5")
+    //implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72")
+    api ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
+    api ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
 
 
 
